@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Fastspeech2 CPG experiment result - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/main.min.css" rel="stylesheet">
+
+</head>
+
+<body style="font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center" style="background-image: linear-gradient(to top, rgb(55, 55, 55), rgb(33, 33, 33));">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo mr-auto" style="margin-top: 30px;">
+        <h1 class="text-lg-left">
+          <a href="index.html">
+            <span style="color: white;font-size: 42px;line-height: 63px;">FedSpeech</span>
+          </a>
+        </h1>
+        <h4 class="text-lg-left">
+          <a>
+            <span style="color: white;margin-top: 30px;font-size: 24px;line-height: 63px;">
+              Experiment results of applying the CPG approach
+            </span>
+
+            <a class="download_block border-left" style="color: white;" href="https://github.com/Zain-Jiang/fastspeech2_newCPG/tree/gh-pages">
+              <i class="ri-github-fill" style="font-size: 30px;position: absolute;"></i>&emsp;&emsp;View on Github
+            </a>
+
+          </a>
+        </h4>
+
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about" >
+      <div class="container" >
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>About</h2>
+        </div>
+
+        <div class="row content" style="justify-content: center;">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150" >
+            <p style="font-size: 20px;">
+              This page contains audio samples from 3 experiments below.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Multitask  <i class="icofont-long-arrow-right" style="position: relative;"></i>  10 speakers</li>
+              <li><i class="ri-check-double-line"></i> Baseline  <i class="icofont-long-arrow-right" style="position: relative;"></i>  10 speakers</li>
+              <li><i class="ri-check-double-line"></i> Normal CPG  <i class="icofont-long-arrow-right" style="position: relative;"></i>  10 speakers</li>
+              <li><i class="ri-check-double-line"></i> New CPG  <i class="icofont-long-arrow-right" style="position: relative;"></i>  10 speakers</li>
+              <li><i class="ri-error-warning-line"></i>Only <b>spk1, spk3, spk10</b> were selected in this page, you can download all from the button below.</li>
+            </ul>
+            <a href="#" class="btn-learn-more">Download All</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Comparison</h2>
+          <p>with different results from 4 experiments</p>
+        </div>
+
+        <div class="owl-carousel testimonials-carousel" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="testimonial-wrap">
+            <div class="testimonial-item">
+
+              <div class="card text-white mb-3 testimonial-img" style="width: auto; left: -60px; top:-26px; background: #3498db;">
+                <div class="card-body" style="padding: 10px;">
+                  <h5 class="card-title" style="margin-bottom: 0px; font-size: 1.1rem;">Example 1</h5>
+                </div>
+              </div>
+
+              <h4 class="text-primary"><b>Conclusion: new piggy can fixed syllable-missing problem.</b></h4>
+
+              <div style="width: 48%;display: inline-block;" id="audio_list1">
+                <h3>Predicted</h3>
+                <!--<h4>Fully trained in spk1, and only finetune the spk_embed at the others</h4>-->
+                <div style="width: 100%;height: 20px;"></div>
+
+              </div>
+              <div style="width: 48%;display: inline-block;margin-left: 2%;top: 0px;vertical-align: top; " id="audio_list2">
+                <h3>Ground Truth</h3>
+                <h4> </h4>
+                <div style="width: 100%;height: 20px;"></div>
+
+              </div>
+              <div style="width: 100%;height: 8px;"></div>
+
+
+            </div>
+          </div>
+
+
+          <div class="testimonial-wrap">
+            <div class="testimonial-item">
+
+              <div class="card text-white mb-3 testimonial-img" style="width: auto; left: -60px; top:-26px; background: #3498db;">
+                <div class="card-body" style="padding: 10px;">
+                  <h5 class="card-title" style="margin-bottom: 0px; font-size: 1.1rem;">Example 2</h5>
+                </div>
+              </div>
+
+              <h4 class="text-primary"><b>Conclusion: for spk12, CPG are similar to baseline but may be more clearer.</b></h4>
+
+              <div style="width: 48%;display: inline-block;" id="audio_list3">
+                <h3>Predicted</h3>
+                <!--<h4>A experiment for verifying the capacity of the pruning mask.</h4>-->
+                <div style="width: 100%;height: 20px;"></div>
+
+              </div>
+              <div style="width: 48%;display: inline-block;margin-left: 2%;top: 0px;vertical-align: top; " id="audio_list4">
+                <h3>Ground Truth</h3>
+                <h4> </h4>
+                <div style="width: 100%;height: 20px;"></div>
+
+              </div>
+              <div style="width: 100%;height: 8px;"></div>
+
+
+            </div>
+          </div>
+
+          <div class="testimonial-wrap">
+            <div class="testimonial-item">
+
+              <div class="card text-white mb-3 testimonial-img" style="width: auto; left: -60px; top:-26px; background: #3498db;">
+                <div class="card-body" style="padding: 10px;">
+                  <h5 class="card-title" style="margin-bottom: 0px; font-size: 1.1rem;">Example 3</h5>
+                </div>
+              </div>
+
+              <h4 class="text-primary"><b>Conclusion: CPG is significantly better than baseline in a few audio samples.</b></h4>
+
+              <div style="width: 48%;display: inline-block;" id="audio_list5">
+                <h3>Predicted</h3>
+                <!--<h4>A experiment for verifying the capacity of the piggy mask.</h4>-->
+                <div style="width: 100%;height: 20px;"></div>
+
+              </div>
+              <div style="width: 48%;display: inline-block;margin-left: 2%;top: 0px;vertical-align: top; " id="audio_list6">
+                <h3>Ground Truth</h3>
+                <h4> </h4>
+                <div style="width: 100%;height: 20px;"></div>
+
+              </div>
+              <div style="width: 100%;height: 8px;"></div>
+
+            </div>
+          </div>
+
+          <!--<div class="testimonial-wrap">-->
+            <!--<div class="testimonial-item">-->
+
+              <!--<div class="card text-white mb-3 testimonial-img" style="width: auto; left: -60px; top:-26px; background: #3498db;">-->
+                <!--<div class="card-body" style="padding: 10px;">-->
+                  <!--<h5 class="card-title" style="margin-bottom: 0px; font-size: 1.1rem;">CPG piggy new</h5>-->
+                <!--</div>-->
+              <!--</div>-->
+
+              <!--<div style="width: 48%;display: inline-block;" id="audio_list7">-->
+                <!--<h3>Predicted</h3>-->
+                <!--<h4>A experiment for testing new CPG.</h4>-->
+                <!--<div style="width: 100%;height: 20px;"></div>-->
+
+              <!--</div>-->
+              <!--<div style="width: 48%;display: inline-block;margin-left: 2%;top: 0px;vertical-align: top; " id="audio_list8">-->
+                <!--<h3>Ground Truth</h3>-->
+                <!--<h4> </h4>-->
+                <!--<div style="width: 100%;height: 20px;"></div>-->
+
+              <!--</div>-->
+              <!--<div style="width: 100%;height: 8px;"></div>-->
+              <!--<h4 class="text-primary"><b>Conclusion: new CPG is similar as normal CPG, but it may make the voice more fluent and quick.</b></h4>-->
+
+            <!--</div>-->
+          <!--</div>-->
+
+          <!--<div class="testimonial-wrap">-->
+            <!--<div class="testimonial-item">-->
+
+              <!--<div class="card text-white mb-3 testimonial-img" style="width: auto; left: -60px; top:-26px; background: #3498db;">-->
+                <!--<div class="card-body" style="padding: 10px;">-->
+                  <!--<h5 class="card-title" style="margin-bottom: 0px; font-size: 1.1rem;">Valid loss for new CPG</h5>-->
+                <!--</div>-->
+              <!--</div>-->
+
+              <!--<div style="width: 48%;display: inline-block;">-->
+                <!--<h3>Mel Loss</h3>-->
+                <!--<div style="width: 100%;height: 20px;"></div>-->
+                <!--<table class="table table-striped">-->
+                  <!--<caption> </caption>-->
+                  <!--<thead>-->
+                  <!--<tr>-->
+                    <!--<th>mel-1</th>-->
+                    <!--<th>2</th>-->
+                    <!--<th>3</th>-->
+                    <!--<th>4</th>-->
+                    <!--<th>5</th>-->
+                    <!--<th>6</th>-->
+                    <!--<th>7</th>-->
+                    <!--<th>8</th>-->
+                    <!--<th>9</th>-->
+                    <!--<th>10</th>-->
+
+                  <!--</tr>-->
+                  <!--</thead>-->
+                  <!--<tbody>-->
+                  <!--<tr>-->
+                    <!--<td>0.1955</td>-->
+                    <!--<td>0.1955</td>-->
+                    <!--<td>0.1762</td>-->
+                    <!--<td>0.1886</td>-->
+                    <!--<td>0.1845</td>-->
+                    <!--<td>0.1936</td>-->
+                    <!--<td>0.2042</td>-->
+                    <!--<td>0.1924</td>-->
+                    <!--<td>0.1955</td>-->
+                    <!--<td>0.2049</td>-->
+                  <!--</tr>-->
+                  <!--<tr>-->
+                    <!--<td>0.1963</td>-->
+                    <!--<td>0.1963</td>-->
+                    <!--<td>0.18</td>-->
+                    <!--<td>0.1893</td>-->
+                    <!--<td>0.1832</td>-->
+                    <!--<td>0.1981</td>-->
+                    <!--<td>0.2014</td>-->
+                    <!--<td>0.1957</td>-->
+                    <!--<td>0.1909</td>-->
+                    <!--<td>0.2014</td>-->
+                  <!--</tr>-->
+                  <!--<tr>-->
+                    <!--<td class="text-success">0.1951</td>-->
+                    <!--<td>0.1955</td>-->
+                    <!--<td class="text-danger">0.1788</td>-->
+                    <!--<td class="text-success">0.1876</td>-->
+                    <!--<td class="text-danger">0.1855</td>-->
+                    <!--<td class="text-danger">0.1997</td>-->
+                    <!--<td class="text-success">0.2004</td>-->
+                    <!--<td class="text-success">0.1907</td>-->
+                    <!--<td class="text-success">0.1923</td>-->
+                    <!--<td class="text-success">0.1955</td>-->
+                  <!--</tr>-->
+                  <!--</tbody>-->
+                <!--</table>-->
+              <!--</div>-->
+
+              <!--<div style="width: 100%;height: 8px;"></div>-->
+              <!--<h4 class="text-primary"><b>Conclusion: the results are similar as normal CPG, we need to test 20 speakers or more.</b></h4>-->
+
+            <!--</div>-->
+          <!--</div>-->
+
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Conclusions</h2>
+        </div>
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>Finetune</h4>
+          </div>
+          <div class="col-lg-7">
+            <p class="text-danger">
+              Finetune behaves awful when transfers at speakers.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>Prune</h4>
+          </div>
+          <div class="col-lg-7">
+            <p class="text-primary">
+              Prunning mask is essential for CPG.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>Piggy mask</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Piggy mask is not so important, but it may make the voice more clear and quick
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>New CPG</h4>
+          </div>
+          <div class="col-lg-7">
+            <p class="text-success">
+              new CPG is similar as normal CPG, but it may make the voice more fluent and quick.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-about">
+              <h3>Fastspeech2</h3>
+              <p> with CPG</p>
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+                <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="info">
+              <div>
+                <i class="ri-map-pin-line"></i>
+                <p>ZheJiang University</p>
+              </div>
+
+              <div>
+                <i class="ri-mail-send-line"></i>
+                <p>Ziyuejiang341@gmail.com</p>
+              </div>
+
+              <div>
+                <i class="ri-phone-line"></i>
+                <p>+86 180 xxxx 8167</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>zain-jiang</strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">Bootstrap 4</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#" class="scrollto">Home</a>
+            <a href="#" class="scrollto">About</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
