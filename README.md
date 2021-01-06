@@ -1,2 +1,2 @@
 # FedSpeech_example
-Speech samples of FedSpeech experiments.
+It is a repository for speech samples of FedSpeech experiments.
