@@ -1,0 +1,138 @@
+accumulate_grad_batches: 1
+adapt_prefixes: []
+arch: 8 8 8 8 8 8 8 8
+attn_constraint: true
+audio_num_mel_bins: 80
+audio_sample_rate: 22050
+base_config: configs/tts/pwg.yaml
+check_val_every_n_epoch: 10
+clip_grad_norm: 1
+data_dir: data/vctk-wav
+debug: false
+dec_ffn_kernel_size: 9
+dec_last_ln: true
+dec_layers: 4
+discriminator_grad_norm: 1
+discriminator_optimizer_params: {eps: 1.0e-06, lr: 5.0e-05, weight_decay: 0.0}
+discriminator_params:
+  bias: true
+  conv_channels: 64
+  in_channels: 1
+  kernel_size: 3
+  layers: 10
+  nonlinear_activation: LeakyReLU
+  nonlinear_activation_params: {negative_slope: 0.2}
+  out_channels: 1
+  use_weight_norm: true
+discriminator_scheduler_params: {gamma: 0.5, step_size: 200000}
+discriminator_train_start_steps: 40000
+dropout: 0.2
+dur_predictor_kernel: 3
+enc_ffn_kernel_size: 9
+enc_layers: 4
+endless_ds: true
+ffn_padding: SAME
+fft_size: 1024
+fmax: 7600
+fmin: 80
+format: hdf5
+gen_dir_name: ''
+generator_grad_norm: 10
+generator_optimizer_params: {eps: 1.0e-06, lr: 0.0001, weight_decay: 0.0}
+generator_params:
+  aux_channels: 80
+  aux_context_window: 2
+  dropout: 0.0
+  gate_channels: 128
+  in_channels: 1
+  kernel_size: 3
+  layers: 30
+  out_channels: 1
+  residual_channels: 64
+  skip_channels: 64
+  stacks: 3
+  upsample_net: ConvInUpsampleNetwork
+  upsample_params:
+    upsample_scales: [4, 4, 4, 4]
+  use_pitch_embed: false
+  use_weight_norm: true
+generator_scheduler_params: {gamma: 0.5, step_size: 200000}
+griffin_lim_iters: 60
+hidden_size: 256
+hop_size: 256
+infer: false
+lambda_adv: 4.0
+lambda_dur: 1.0
+lambda_energy: 1.0
+lambda_pitch: 1.0
+lambda_uv: 1.0
+log_interval: 100
+loud_norm: false
+lr: 2.0
+magnitude_power: 1
+max_epochs: 1000
+max_eval_samples: 20480
+max_eval_sentences: 1
+max_eval_tokens: 60000
+max_frames: 1550
+max_input_tokens: 1550
+max_samples: 20480
+max_sentences: 5
+max_tokens: 28000
+max_updates: 1000000
+mel_loss: l1
+min_level_db: -100
+num_mels: 80
+num_sanity_val_steps: 5
+num_spk: 400
+optimizer_adam_beta1: 0.9
+optimizer_adam_beta2: 0.98
+out_wav_norm: false
+pitch_loss: l1
+power: 1
+predictor_hidden: 256
+predictor_sg: true
+prenet_hidden_size: 32
+pretrain_fs_ckpt: ''
+profile_infer: false
+raw_data_dir: data/raw/VCTK-Corpus
+ref_hidden_stride_kernel: ['256,3,9', '256,3,9', '256,2,9', '256,2,9', '256,2,9']
+ref_level_db: 20
+ref_norm_layer: none
+sampling_rate: 22050
+save_ckpt: true
+save_gt: false
+seed: 1234
+sep_dur_loss: true
+sort_by_len: true
+stft_loss_params:
+  fft_sizes: [1024, 2048, 512]
+  hop_sizes: [120, 240, 50]
+  win_lengths: [600, 1200, 240]
+  window: hann_window
+stop_token_weight: 5.0
+test_input_dir: ''
+test_num: 100
+test_set_name: test
+train_set_name: train
+use_amp: false
+use_energy_embed: true
+use_gt_dur: false
+use_mel_loss: false
+use_pitch_embed: true
+use_ref_enc: false
+use_spk_embed: false
+use_spk_id: false
+use_training: false
+use_uv: true
+val_check_interval: 1000
+valid_set_name: valid
+vocoder: pwg
+vocoder_ckpt: ''
+warmup_updates: 2000
+weight_decay: 0
+win_length: null
+win_size: 1024
+window: hann
+with_wav: true
+work_dir: checkpoints/0717_vctkpwgk3_1
